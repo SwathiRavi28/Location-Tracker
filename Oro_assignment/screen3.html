@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito Sans">
+    <title>Document</title>
+</head>
+<body>
+    <div class="settings_container"><div class="settings1">Logged in as</div>
+        <div class="settings">dev@orocorp.in</div>
+        <div class="settings" onclick="callscreen1()">All Partners <svg class="open_arrow" width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.832432L0.832432 0L4.4 3.56757L0.832432 7.13514L0 6.3027L2.73514 3.56757L0 0.832432Z" fill="black"/>
+            </svg>
+            </div>
+        <div class="settings" onclick="callscreen4()">Logout <svg class="open_arrow1" width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.832432L0.832432 0L4.4 3.56757L0.832432 7.13514L0 6.3027L2.73514 3.56757L0 0.832432Z" fill="black"/>
+            </svg>
+            </div>
+    </div>
+    <script>
+         function callscreen1(){
+            localStorage.setItem("callfrom","screen3")
+       window.location.href="/screen1.html"
+   }
+   function callscreen4(){
+       window.location.href="/screen4.html"
+   }
+    </script>
+</body>
+</html>
